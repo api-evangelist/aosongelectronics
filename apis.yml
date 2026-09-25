@@ -1,23 +1,68 @@
 aid: aosongelectronics
+
 name: Aosongelectronics
-description: 'Aosongelectronics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Aosongelectronics, operating under the brand ASAIR, is a Chinese semiconductor company specializing in MEMS smart sensor solutions. It offers a broad portfolio including temperature & humidity sensors, oxygen sensors, flow meters, pressure gauges, gas sensors, and related instrumentation. The company serves global markets with high‑precision, reliable sensor products for industrial, environmental, and consumer applications, emphasizing stability, low leakage, and long‑term performance.'
+
 url: https://raw.githubusercontent.com/api-evangelist/aosongelectronics/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- Technology
+- Electronics
+- Manufacturing
+- IoT
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
-- type: Website
-  url: https://equityzen.com/company/aosongelectronics
+
+
+  - type: Hosts
+    url: hosts/aosongelectronics-hosts.yml
+  - type: DomainSecurity
+    url: security/aosongelectronics-domain-security.yml
+  - type: Website
+    url: https://aosong.com/en/
+  - type: GettingStarted
+    url: https://aosong.com/en/Products/list.aspx?lcid=164
+  - type: Support
+    url: https://aosong.com/en/Contact/index.aspx
+  - type: SignUp
+    url: https://aosong.com/en/Login/index.aspx
+  - type: PrivacyPolicy
+    url: https://beian.miit.gov.cn/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The company's website is a JavaScript‑rendered site with no machine‑readable API specifications discovered.
+  evidence:
+  - url: https://aosong.com/en/
+    status: 200
+  checked: '2026-09-25'
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
